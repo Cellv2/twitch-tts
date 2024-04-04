@@ -8,8 +8,10 @@ type AppProps = {
 
 const App = ({ title }: AppProps) => (
     <>
-        <h1>{title}</h1>
-        <p>Test App</p>
+        <main className="dark:bg-blue-950 dark:text-white min-h-dvh">
+            <h1>{title}</h1>
+            <p>Test App</p>
+        </main>
     </>
 );
 
