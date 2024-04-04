@@ -1,0 +1,40 @@
+{
+    "include": [
+        "./src",
+        "./webpack.*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "./src/**/*.test.ts",
+        "./src/**/*.test.tsx",
+        "./dist"
+    ],
+    "compilerOptions": {
+        "target": "es2016",
+        "lib": [
+            "DOM",
+            "DOM.Iterable",
+            "ESNext"
+        ],
+        "jsx": "react",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "paths": {
+            "@src/*": [
+                "./src/*"
+            ]
+        },
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "skipLibCheck": true,
+        "plugins": [
+            {
+                "name": "typescript-plugin-css-modules"
+            }
+        ]
+    }
+}
